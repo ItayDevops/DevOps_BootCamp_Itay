@@ -61,4 +61,4 @@ echo 3. Include both the small and capital
 echo 4. case_letters
 echo
 
-password_validetor ##Function call
+
