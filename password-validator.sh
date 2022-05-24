@@ -1,5 +1,5 @@
 #!/bin/bash
-##input password for user check
+##password Validetor with feature flag 
 Red='\033[0;31m'      # Red
 Green='\033[0;32m'    # Green
 reset_color='\033[0m' # reset
