@@ -1,19 +1,10 @@
 #!/bin/bash
-<<<<<<< HEAD
 ##input password for user check
 Red='\033[0;31m'          # Red
 Green='\033[0;32m'        # Green
 reset_color='\033[0m'
 pass1=$1                  # Takes Argument
 LEN=${#pass1}             #Password Len Check
-=======
-##password Validetor with feature flag 
-Red='\033[0;31m'      # Red
-Green='\033[0;32m'    # Green
-reset_color='\033[0m' # reset
-pass1=$1              # Takes Argument
-LEN=${#pass1}         #Password Len Check
->>>>>>> 2d0e27efcc5bde2cb5955c1a8d7f6f13d4324fa2
 
 function password_validetor () {
 ###Check Password Length and its contains
