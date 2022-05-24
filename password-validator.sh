@@ -37,6 +37,23 @@ function password_validetor() {
 
 }
 
+while getopts "f" arg; do
+  case $arg in 
+    f) 
+     file=$2
+     
+    while read -r pass1
+    do 
+        pass1=$pass1
+    done < "$file"
+    password_validetor ##Function call 
+    ;;
+    *)
+    echo "need to choose a valid switch"
+    ;;
+  esac
+done
+
 echo Hello User!
 echo 'Please enter Password and make sure it fits to our passwords policy'
 echo 'Password need to follow this policy:'
@@ -46,4 +63,4 @@ echo 3. Include both the small and capital
 echo 4. case_letters
 echo
 
-password_validetor ##Function call
+
