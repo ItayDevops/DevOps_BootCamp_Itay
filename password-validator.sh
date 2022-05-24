@@ -35,6 +35,23 @@ else
 fi
 }
 
+while getopts "f" arg; do
+  case $arg in 
+    f) 
+     file=$2
+     
+    while read -r pass1
+    do 
+        pass1=$pass1
+    done < "$file"
+    password_validetor ##Function call 
+    ;;
+    *)
+    echo "need to choose a valid switch"
+    ;;
+  esac
+done
+
 echo Hello User!
 echo 'Please enter Password and make sure it fits to our passwords policy'
 echo 'Password need to follow this policy:'
