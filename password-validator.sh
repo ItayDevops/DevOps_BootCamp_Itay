@@ -6,7 +6,8 @@ reset_color='\033[0m'
 pass1=$1                  # Takes Argument
 LEN=${#pass1}             #Password Len Check
 
-function password_validetor () {
+function password_validetor () ##Function with all the parameters check
+{
 ###Check Password Length and its contains
 if [[ $LEN -ge 10 ]]
 then
@@ -43,8 +44,9 @@ while getopts "f" arg; do
     while read -r pass1
     do 
         pass1=$pass1
+        password_validetor ##Function call
     done < "$file"
-    password_validetor ##Function call 
+    
     ;;
     *)
     echo "need to choose a valid switch"
@@ -61,4 +63,5 @@ echo 3. Include both the small and capital
 echo 4. case_letters
 echo
 
+password_validetor ##Function call 
 
